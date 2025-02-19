@@ -65,7 +65,6 @@ class SparseMatrix:
         return result
 
     def __mul__(self, other):
-        """Multiply two sparse matrices."""
         if self.num_cols != other.num_rows:
             raise ValueError('Matrices cannot be multiplied due to dimension mismatch.')
 
@@ -105,7 +104,7 @@ def get_matrix_operation():
 
 
 def main():
-    file1 = 'easy_sample_04_1.txt'
+    file1 = 'easy_sample_03_2.txt'
     file2 = 'easy_sample_03_3.txt'
 
     matrix1 = SparseMatrix()
